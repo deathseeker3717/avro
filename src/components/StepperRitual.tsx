@@ -12,7 +12,7 @@ export const StepperRitual: React.FC = () => {
       subtitle: 'Corner Pull Notch',
       desc: 'Retrieve an individually sealed freshness foil sachet from your pocket pack. Tear cleanly at the corner notch.',
       badge: 'FRESHNESS FOIL SACHET',
-      image: '/assets/avro-sachet-generated.jpg',
+      image: '/assets/AVRO Orange Metallic Sachet on Slate.png',
       stat: 'Airtight Moisture Barrier',
       detail: 'Moisture-proof, light-proof barrier preserves delicate active compounds at 100% potency.'
     },
@@ -23,7 +23,7 @@ export const StepperRitual: React.FC = () => {
       subtitle: 'Sublingual Contact',
       desc: 'Extract the ultra-thin 50µm polymer strip and place it directly on or beneath your tongue. No chewing, no glass of water, no bulky capsule to swallow.',
       badge: 'LAYER 03: THINSOL™ MATRIX',
-      image: '/assets/avro-strip-macro.jpg',
+      image: '/assets/AVRO Caffeine Strip Close-Up.png',
       stat: '50µm Pullulan Film',
       detail: 'Instantly adheres to moist oral mucosal tissue without sticking to fingers.'
     },
@@ -34,7 +34,7 @@ export const StepperRitual: React.FC = () => {
       subtitle: 'Hydrophilic Hydration',
       desc: 'Salivary enzymes naturally activate the hydrophilic pullulan polymer matrix. The strip dissolves entirely in less than 30 seconds without leaving any residue.',
       badge: 'RAPID MELT ENGINE',
-      image: '/assets/avro-strip-float.jpg',
+      image: '/assets/AVRO Caffeine Strip in Cinematic Teal.png',
       stat: '< 30 Seconds Total Melt',
       detail: 'pH-neutral dissolution prevents enamel erosion and eliminates bitter drug aftertaste.'
     },
@@ -45,7 +45,7 @@ export const StepperRitual: React.FC = () => {
       subtitle: 'Direct Venous Pathway',
       desc: 'Active caffeine, L-theanine, and micronutrients diffuse straight through thin sublingual epithelium directly into the superior vena cava circulation.',
       badge: 'FIRST-PASS BYPASS',
-      image: '/assets/avro-lifestyle-desk.jpg',
+      image: '/assets/Cinematic AVRO Caffeine Workspace.png',
       stat: 'Immediate Bio-Availability',
       detail: 'Skips stomach gastric acid breakdown and liver hepatic enzymatic degradation completely.'
     },
@@ -56,7 +56,7 @@ export const StepperRitual: React.FC = () => {
       subtitle: 'Clean Cognitive Energy',
       desc: 'Experience pure, calm alertness without caffeine jitters, racing heart rate, or the harsh 2-hour crash associated with carbonated energy drinks.',
       badge: 'CLEAN COGNITION',
-      image: '/assets/avro-usecase-study.jpg',
+      image: '/assets/Cinematic Late-Night Coding Study Desk.png',
       stat: '4+ Hours Smooth Alertness',
       detail: 'L-theanine balances caffeine alpha-wave brain activity for laser focus.'
     }

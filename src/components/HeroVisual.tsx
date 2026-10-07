@@ -28,28 +28,28 @@ export const HeroVisual: React.FC = () => {
     {
       id: 'lineup',
       label: 'Design Inspirations',
-      image: '/assets/avro-flavor-lineup.png',
+      image: '/assets/AVRO Caffeine Strips_ Five Flavours.png',
       badge: 'AVRO Flavors & Styles',
       subtitle: 'Mint · Berry · Tropical · Lemon Citrus · Orange',
     },
     {
       id: 'cpack',
       label: 'Pocket Box (30’s)',
-      image: '/assets/avro-cpack-generated.jpg',
+      image: '/assets/Premium AVRO Berry Caffeine Strips.png',
       badge: 'AVRO Pocket Box 30’s',
       subtitle: 'Vertical Flip-Top Box with Die-Cut Thumb Notch',
     },
     {
       id: 'sachet',
       label: 'Freshness Foil Sachet',
-      image: '/assets/avro-sachet-generated.jpg',
+      image: '/assets/AVRO Orange Metallic Sachet on Slate.png',
       badge: 'Single Sealed Sachet',
       subtitle: 'Hermetic Foil Sachet with Corner Pull Notch',
     },
     {
       id: 'macro',
       label: 'Active Dissolving Strip',
-      image: '/assets/avro-strip-macro.jpg',
+      image: '/assets/AVRO Caffeine Strip Close-Up.png',
       badge: 'Water-Free Oral Film',
       subtitle: 'Sub-Millimeter Fast-Dissolving Matrix',
     },
@@ -158,7 +158,7 @@ export const HeroVisual: React.FC = () => {
           </p>
           <h4 className="text-sm font-semibold text-white">Multi-Flavor Suite</h4>
           <p className="text-xs text-white/50 mt-1 leading-relaxed">
-            Mint Tin, Berry Pouch, Citrus Pocket Pack, and Tropical Slider.
+            Blood Orange, Mint Breeze, Lemon Citrus, Wild Berry, and Tropical Sol in slim pocket packs.
           </p>
         </div>
       </div>

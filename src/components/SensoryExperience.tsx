@@ -31,7 +31,7 @@ export const SensoryExperience: React.FC = () => {
         { label: 'Water Required', value: '0.00 mL' },
         { label: 'Dental Adhesion', value: 'Zero (Non-Sticky)' },
       ],
-      image: '/assets/avro-strip-macro.jpg',
+      image: '/assets/AVRO Caffeine Strip Close-Up.png',
       visualBadge: 'Phase 1: Hydration Matrix',
       accent: '#55E6D1'
     },
@@ -47,7 +47,7 @@ export const SensoryExperience: React.FC = () => {
         { label: 'Active Release', value: 'Micro-Dispersed' },
         { label: 'Flavor Delivery', value: 'Arctic Menthol Terpenes' },
       ],
-      image: '/assets/avro-strip-float.jpg',
+      image: '/assets/AVRO Caffeine Strip in Cinematic Teal.png',
       visualBadge: 'Phase 2: Molecular Dissolution',
       accent: '#FACC15'
     },
@@ -63,7 +63,7 @@ export const SensoryExperience: React.FC = () => {
         { label: 'GI Tract Strain', value: '0% Acid Induction' },
         { label: 'Full Disintegration', value: 'Complete (< 30s)' },
       ],
-      image: '/assets/avro-pack-hero.jpg',
+      image: '/assets/AVRO Caffeine Strips Duo.png',
       visualBadge: 'Phase 3: Systemic Bio-Activation',
       accent: '#14B8A6'
     }

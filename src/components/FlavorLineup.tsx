@@ -124,8 +124,8 @@ export const FlavorLineup: React.FC<FlavorLineupProps> = ({
         <div className="rounded-3xl sm:rounded-[2.5rem] p-2.5 sm:p-3 bg-[#121218] border border-white/10 backdrop-blur-2xl mb-12 shadow-2xl">
           <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden aspect-[16/9] sm:aspect-[16/8] bg-black border border-white/8 group">
             <img
-              src="/assets/avro-flavor-lineup.png"
-              alt="AVRO Caffeine Strips Flavor Lineup"
+              src="/assets/AVRO Caffeine Strips_ Five Flavours.png"
+              alt="AVRO Caffeine Strips 5 Flavors Lineup"
               className="w-full h-full object-cover object-center transition-all duration-700 ease-out group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent pointer-events-none" />
@@ -133,13 +133,13 @@ export const FlavorLineup: React.FC<FlavorLineupProps> = ({
             <div className="absolute bottom-6 left-6 right-6 flex flex-col sm:flex-row sm:items-end justify-between gap-4 z-10">
               <div>
                 <span className="text-[10px] font-mono tracking-widest uppercase font-bold" style={{ color: activeFlavor.color }}>
-                  THE COMPLETE 5-FLAVOR SUITE
+                  THE 5-FLAVOR SUITE · DEMO CONCEPT
                 </span>
                 <h3 className="text-xl sm:text-2xl font-bold text-white mt-1">
                   BLOOD ORANGE · MINT · LEMON CITRUS · WILD BERRY · TROPICAL
                 </h3>
                 <p className="text-xs sm:text-sm text-white/70 mt-1">
-                  Translucent dissolving strips paired with slim pocket folding carton packaging.
+                  * Demo design prototype — visual concepts and packaging renders are for demonstration and not final production.
                 </p>
               </div>
 

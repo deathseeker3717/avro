@@ -44,12 +44,12 @@ export const OFFICIAL_FLAVORS: FlavorInfo[] = [
     subtitle: 'Arctic Spearmint & Crisp Peppermint',
     accentColor: '#55E6D1',
     glowColor: 'rgba(85, 230, 209, 0.35)',
-    badge: 'Signature Ice-Blue Tin & Pocket Pack',
+    badge: 'Mint Breeze Pocket Box',
     tastingNotes: ['Immediate burst of crisp peppermint', 'Zero bitter aftertaste', 'Micro-cooling finish'],
     metrics: { cooling: 95, freshness: 98, intensity: 80, dissolveSec: 22 },
     activeActives: '50mg Micro-Encapsulated Caffeine + 25mg L-Theanine',
-    packagingFormat: 'Pocket Box (30’s) & Ice-Blue Tin',
-    image: '/assets/avro-cpack-generated.jpg',
+    packagingFormat: 'Mint Pocket Box (30 Strips)',
+    image: '/assets/AVRO Caffeine Strips_ Five Flavours.png',
     stripColor: '#55E6D1'
   },
   {
@@ -62,8 +62,8 @@ export const OFFICIAL_FLAVORS: FlavorInfo[] = [
     tastingNotes: ['Bright citrus morning burst', 'Natural yuzu terpenes', 'Clean palate lift'],
     metrics: { cooling: 65, freshness: 95, intensity: 88, dissolveSec: 25 },
     activeActives: '50mg Fast-Release Caffeine + Vitamin B-Complex',
-    packagingFormat: 'Citrus Pocket Box & Sealed Sachets',
-    image: '/assets/avro-flavor-lineup.png',
+    packagingFormat: 'Citrus Pocket Box (30 Strips)',
+    image: '/assets/AVRO Caffeine Strips_ Five Flavours.png',
     stripColor: '#FACC15'
   },
   {
@@ -76,8 +76,8 @@ export const OFFICIAL_FLAVORS: FlavorInfo[] = [
     tastingNotes: ['Juicy bittersweet orange rind', 'Smooth natural sweetness', 'No sour acidity'],
     metrics: { cooling: 55, freshness: 92, intensity: 85, dissolveSec: 24 },
     activeActives: '50mg Micro-Encapsulated Caffeine + Citrus Bioflavonoids',
-    packagingFormat: 'Orange Pocket Box & Single Sachets',
-    image: '/assets/avro-cpack-generated.jpg',
+    packagingFormat: 'Orange Pocket Box (30 Strips)',
+    image: '/assets/AVRO Orange Metallic Sachet on Slate.png',
     stripColor: '#FB923C'
   },
   {
@@ -86,12 +86,12 @@ export const OFFICIAL_FLAVORS: FlavorInfo[] = [
     subtitle: 'Blackcurrant & Macerated Bramble',
     accentColor: '#F43F5E',
     glowColor: 'rgba(244, 63, 94, 0.35)',
-    badge: 'Burgundy Barrier Pouch',
+    badge: 'Wild Berry Pocket Box',
     tastingNotes: ['Rich forest berry depth', 'Smooth velvety dissolve', 'Zero dental residue'],
     metrics: { cooling: 40, freshness: 88, intensity: 90, dissolveSec: 27 },
     activeActives: 'Caffeine-Free Focus Blend (L-Theanine + Rhodiola)',
-    packagingFormat: 'Burgundy Pouch & Freshness Foil Sachet',
-    image: '/assets/avro-sachet-generated.jpg',
+    packagingFormat: 'Berry Pocket Box (30 Strips)',
+    image: '/assets/Premium AVRO Berry Caffeine Strips.png',
     stripColor: '#F43F5E'
   },
   {
@@ -100,12 +100,12 @@ export const OFFICIAL_FLAVORS: FlavorInfo[] = [
     subtitle: 'Golden Passionfruit & Island Mango',
     accentColor: '#14B8A6',
     glowColor: 'rgba(20, 184, 166, 0.35)',
-    badge: 'Teal-Yellow Pocket Slider',
+    badge: 'Tropical Sol Pocket Box',
     tastingNotes: ['Exotic passionfruit aroma', 'Crisp tropical melt', 'All-day clean clarity'],
     metrics: { cooling: 60, freshness: 94, intensity: 82, dissolveSec: 23 },
     activeActives: '50mg Natural Caffeine + Electrolyte Complex',
-    packagingFormat: 'Teal Slider & Multi-Serve Pocket Box',
-    image: '/assets/avro-pack-hero.jpg',
+    packagingFormat: 'Tropical Pocket Box (30 Strips)',
+    image: '/assets/AVRO Caffeine Strips_ Five Flavours.png',
     stripColor: '#14B8A6'
   }
 ]
@@ -179,13 +179,13 @@ export const KumoHeroVisual: React.FC = () => {
   const getDisplayImage = () => {
     switch (activeAssetView) {
       case 'box':
-        return '/assets/avro-cpack-generated.jpg'
+        return '/assets/Premium AVRO Berry Caffeine Strips.png'
       case 'sachet':
-        return '/assets/avro-sachet-generated.jpg'
+        return '/assets/AVRO Orange Metallic Sachet on Slate.png'
       case 'strip':
-        return '/assets/avro-strip-macro.jpg'
+        return '/assets/AVRO Caffeine Strip Close-Up.png'
       case 'suite':
-        return '/assets/avro-flavor-lineup.png'
+        return '/assets/AVRO Caffeine Strips_ Five Flavours.png'
       default:
         return selectedFlavor.image
     }

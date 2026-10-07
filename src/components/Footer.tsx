@@ -193,9 +193,12 @@ export const Footer: React.FC<FooterProps> = ({ onOpenWaitlist }) => {
         </div>
 
         {/* Regulatory Disclaimers */}
-        <div className="pt-6 pb-6 border-b border-white/5 text-[11px] text-white/40 leading-relaxed font-mono">
+        <div className="pt-6 pb-6 border-b border-white/5 text-[11px] text-white/40 leading-relaxed font-mono space-y-2">
           <p>
-            *DISCLAIMER: AVRO is a functional dietary supplement platform formulated with food-grade oral dissolving polymers. This product is not intended to diagnose, treat, cure, or prevent any medical condition. Formulated for healthy adults aged 18 and older. Not recommended for children, pregnant or nursing women, or individuals sensitive to caffeine.
+            *DEMO CONCEPT NOTICE: All packaging graphics, 3D product visuals, renders, and interface mockups displayed on this website are conceptual prototypes created for demonstration purposes and are not final production units.
+          </p>
+          <p>
+            *DIETARY SUPPLEMENT DISCLAIMER: AVRO is a functional dietary supplement platform formulated with food-grade oral dissolving polymers. This product is not intended to diagnose, treat, cure, or prevent any medical condition. Formulated for healthy adults aged 18 and older.
           </p>
         </div>
 

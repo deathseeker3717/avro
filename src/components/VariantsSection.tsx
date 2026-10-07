@@ -28,7 +28,7 @@ export const VariantsSection: React.FC<VariantsSectionProps> = ({ onOpenWaitlist
         <div className="mb-12 rounded-3xl sm:rounded-[2.5rem] p-2.5 sm:p-3 bg-[#121218] border border-white/10 shadow-2xl">
           <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden aspect-[16/9] max-h-[480px] w-full bg-[#070709] border border-white/8">
             <img
-              src="/assets/avro-variants-duo.jpg"
+              src="/assets/AVRO Caffeine Strips Duo.png"
               alt="AVRO Caffeine and AVRO Caffeine-Free Packs"
               className="w-full h-full object-cover object-center"
             />
@@ -37,10 +37,13 @@ export const VariantsSection: React.FC<VariantsSectionProps> = ({ onOpenWaitlist
             <div className="absolute bottom-6 left-6 right-6 flex flex-col sm:flex-row sm:items-end justify-between gap-4 z-10">
               <div>
                 <span className="text-[10px] font-mono tracking-widest text-[#FF5722] uppercase font-bold">
-                  SIDE-BY-SIDE ARCHITECTURE
+                  SIDE-BY-SIDE ARCHITECTURE · DEMO PROTOTYPE
                 </span>
                 <p className="text-lg sm:text-xl font-bold text-white mt-1">
                   Same pocket-sized format. Tailored for your daily rhythm.
+                </p>
+                <p className="text-xs font-mono text-white/50 mt-1">
+                  * Note: Visual packaging prototypes shown are for demonstration and not final production artwork.
                 </p>
               </div>
 

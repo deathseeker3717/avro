@@ -14,7 +14,7 @@ export const PackagingArchitecture: React.FC = () => {
       specs: '30 Individually Wrapped Strips · Pocket Size',
       description:
         'An ergonomic, pocket-sized vertical flip-top box with a precision thumb notch. Protects individual sachets from crushing inside pockets or bags while providing effortless one-handed dispensing.',
-      image: '/assets/avro-cpack-generated.jpg',
+      image: '/assets/Premium AVRO Berry Caffeine Strips.png',
       badge: 'AVRO 30-STRIP POCKET PACK',
       bulletPoints: [
         'Pocket-sized vertical flip-top lid with secure friction lock',
@@ -38,7 +38,7 @@ export const PackagingArchitecture: React.FC = () => {
       specs: 'Single-Strip Pouch · Corner Pull Notch · Zero Humidity',
       description:
         'Every single strip is individually sealed in an ultra-hygienic multi-layer barrier foil sachet with an intuitive corner pull notch. Locks out ambient moisture and lets you slide 2 or 3 loose strips directly into your wallet, phone case, or pocket.',
-      image: '/assets/avro-sachet-generated.jpg',
+      image: '/assets/AVRO Orange Metallic Sachet on Slate.png',
       badge: 'AIRTIGHT FRESHNESS SACHET',
       bulletPoints: [
         'Engineered single-strip pouch for maximum active freshness',
@@ -62,7 +62,7 @@ export const PackagingArchitecture: React.FC = () => {
       specs: '< 30s Dissolve · 0 mL Water · Zero Sugar',
       description:
         'Powered by patented ThinSol™ oral strip technology. Developed with micro-encapsulation to eliminate caffeine bitterness without bulky excipients. Dissolves cleanly on the tongue in under 30 seconds with zero water, chewing, or swallowing resistance.',
-      image: '/assets/avro-strip-macro.jpg',
+      image: '/assets/AVRO Caffeine Strip Close-Up.png',
       badge: 'PATENTED THINSOL™ MATRIX',
       bulletPoints: [
         'Fast dissolution in under 30 seconds on dorsal tongue or sublingual mucosa',
@@ -100,9 +100,14 @@ export const PackagingArchitecture: React.FC = () => {
             </h2>
           </div>
 
-          <p className="text-base sm:text-lg text-white/60 max-w-md font-normal leading-relaxed">
-            Every layer from the pocket-sized outer box to the individual freshness sachet and ThinSol™ dissolving film is custom-tooled for instant, water-free focus.
-          </p>
+          <div className="max-w-md">
+            <p className="text-base sm:text-lg text-white/60 font-normal leading-relaxed">
+              Every layer from the pocket-sized outer box to the individual freshness sachet and ThinSol™ dissolving film is custom-tooled for instant, water-free focus.
+            </p>
+            <p className="text-xs font-mono text-white/40 mt-2">
+              * Note: Packaging architecture and 3D renders shown are conceptual demo prototypes for evaluation, not final production units.
+            </p>
+          </div>
         </div>
 
         {/* Jeton-Style Layer Switcher Buttons */}

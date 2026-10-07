@@ -12,7 +12,7 @@ export const UseCasesSection: React.FC = () => {
       description:
         'When you are debugging distributed systems or pushing commits, stepping away to brew coffee breaks your flow state. AVRO sits discreetly on your palm rest.',
       icon: Terminal,
-      image: '/assets/avro-lifestyle-desk.jpg',
+      image: '/assets/Cinematic AVRO Caffeine Workspace.png',
       tag: 'DEEP WORK',
     },
     {
@@ -22,7 +22,7 @@ export const UseCasesSection: React.FC = () => {
       description:
         'Late-night library marathons require quiet, frictionless alertness. Zero paper cups, zero cafeteria lines, and permitted in exam halls where drinks are banned.',
       icon: BookOpen,
-      image: '/assets/avro-usecase-study.jpg',
+      image: '/assets/Cinematic Late-Night Coding Study Desk.png',
       tag: 'ACADEMIC FOCUS',
     },
     {
@@ -32,7 +32,7 @@ export const UseCasesSection: React.FC = () => {
       description:
         'Security lines, long train transits, and early morning flights. AVRO passes through security without liquid restrictions, spills, or tray tables.',
       icon: Plane,
-      image: '/assets/avro-usecase-travel.jpg',
+      image: '/assets/Premium Airport Essentials Still Life.png',
       tag: 'EVERYDAY TRANSIT',
     },
     {
@@ -42,7 +42,7 @@ export const UseCasesSection: React.FC = () => {
       description:
         'When pitch decks or client deliverables are due in an hour, AVRO delivers clean focus support right from your pocket without leaving your desk.',
       icon: Clock,
-      image: '/assets/avro-lifestyle-edc.jpg',
+      image: '/assets/Premium AVRO EDC Flat Lay.png',
       tag: 'HIGH VELOCITY',
     },
     {
@@ -52,7 +52,7 @@ export const UseCasesSection: React.FC = () => {
       description:
         'Zero open cans or sticky condensation near your mechanical keyboard or controller. Fast-dissolving convenience during 30-second respawn timers.',
       icon: Gamepad2,
-      image: '/assets/avro-strip-float.jpg',
+      image: '/assets/AVRO Caffeine Strip in Cinematic Teal.png',
       tag: 'COMPETITIVE SPRINT',
     },
     {
@@ -62,7 +62,7 @@ export const UseCasesSection: React.FC = () => {
       description:
         'Client presentations, design reviews, and company all-hands. Stay sharp without juggling a warm paper mug between conference rooms.',
       icon: Briefcase,
-      image: '/assets/avro-pack-hero.jpg',
+      image: '/assets/Premium AVRO Berry Caffeine Strips.png',
       tag: 'PROFESSIONAL CADENCE',
     },
   ]

@@ -49,9 +49,9 @@ export const Hero: React.FC<HeroProps> = ({
       <div className="relative z-10 w-full flex items-center justify-between gap-4 pt-2">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[11px] font-mono tracking-wider text-white">
           <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
-          <span>BATCH 01 ALLOCATION OPEN</span>
+          <span>BATCH 01 ALLOCATION</span>
           <span className="text-white/40">|</span>
-          <span className="text-white/80">THINSOL™ RAPID MELT</span>
+          <span className="text-white/80">DEMO PROTOTYPE · NOT FINAL DESIGN</span>
         </div>
 
         {/* Dynamic 3D Flavor Material Switcher */}
@@ -94,7 +94,7 @@ export const Hero: React.FC<HeroProps> = ({
             for all focus.
           </h1>
 
-          <div className="mt-6 flex items-center gap-4">
+          <div className="mt-6 flex flex-wrap items-center gap-3">
             {/* Scroll Indicator Pill */}
             <button
               onClick={scrollToExplore}
@@ -104,8 +104,8 @@ export const Hero: React.FC<HeroProps> = ({
               <span>• Scroll to explore</span>
             </button>
 
-            <span className="text-xs font-mono text-white/70 hidden sm:inline-block">
-              ThinSol™ Patent US9844512B2 · &lt; 30s Oral Dissolution
+            <span className="text-xs font-mono text-white/60">
+              * Concept Demo · 3D visual and packaging models are for demonstration and not final production.
             </span>
           </div>
         </div>

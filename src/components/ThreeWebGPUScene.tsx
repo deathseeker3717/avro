@@ -186,36 +186,36 @@ const STRIP_FLAVOR_PALETTES: Record<string, {
     base: '#FF6D00',
     grad1: '#FFA726',
     grad2: '#E64A19',
-    poreShadow: 'rgba(120, 30, 0, 0.30)',
+    poreShadow: 'rgba(90, 20, 0, 0.38)',
   },
   mint: {
     base: '#00BFA5',
     grad1: '#64FFDA',
     grad2: '#00796B',
-    poreShadow: 'rgba(0, 80, 70, 0.30)',
+    poreShadow: 'rgba(0, 60, 50, 0.38)',
   },
   lemon: {
     base: '#FBC02D',
     grad1: '#FFF176',
     grad2: '#F57F17',
-    poreShadow: 'rgba(140, 90, 0, 0.32)',
+    poreShadow: 'rgba(100, 60, 0, 0.40)',
   },
   tropical: {
     base: '#FFA000',
     grad1: '#FFD54F',
     grad2: '#E65100',
-    poreShadow: 'rgba(130, 45, 0, 0.32)',
+    poreShadow: 'rgba(100, 35, 0, 0.40)',
   },
   berry: {
     base: '#D81B60',
     grad1: '#FF4081',
     grad2: '#880E4F',
-    poreShadow: 'rgba(90, 10, 35, 0.30)',
+    poreShadow: 'rgba(70, 5, 25, 0.38)',
   },
 }
 
 // Procedural micro-texture matching the authentic ThinSol™ sublingual polymer matrix
-// with delicate, subtle dissolving pores and natural seamless edges (no white outline)
+// with clearly visible dissolving micro-pores and natural seamless edges (zero white outline)
 function createStripTexture(flavor: FlavorData): THREE.CanvasTexture {
   const c = document.createElement('canvas')
   c.width = 512
@@ -233,20 +233,20 @@ function createStripTexture(flavor: FlavorData): THREE.CanvasTexture {
   ctx.fillStyle = grad
   ctx.fillRect(0, 0, 512, 1024)
 
-  // Subtle, delicate ThinSol™ micro-dissolve pores ('just little') without harsh outline
-  for (let y = 14; y < 1024; y += 20) {
-    for (let x = 14; x < 512; x += 20) {
-      const offsetX = (y % 40 === 0) ? 10 : 0
+  // ThinSol™ dissolving micro-pores — clearly visible pore matrix with crisp depth, NO outline
+  for (let y = 14; y < 1024; y += 22) {
+    for (let x = 14; x < 512; x += 22) {
+      const offsetX = (y % 44 === 0) ? 11 : 0
       const px = x + offsetX
-      // Soft depth shadow
+      // Cavity depth shadow
       ctx.fillStyle = palette.poreShadow
       ctx.beginPath()
-      ctx.arc(px + 0.8, y + 0.8, 2.6, 0, Math.PI * 2)
+      ctx.arc(px + 0.8, y + 0.8, 2.8, 0, Math.PI * 2)
       ctx.fill()
-      // Gentle soft dissolving pore core
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.60)'
+      // Crisp dissolving pore core
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.72)'
       ctx.beginPath()
-      ctx.arc(px, y, 2.0, 0, Math.PI * 2)
+      ctx.arc(px, y, 2.2, 0, Math.PI * 2)
       ctx.fill()
     }
   }
@@ -256,7 +256,7 @@ function createStripTexture(flavor: FlavorData): THREE.CanvasTexture {
     const imgData = ctx.getImageData(0, 0, 512, 1024)
     const d = imgData.data
     for (let i = 0; i < d.length; i += 4) {
-      const noise = (Math.random() - 0.5) * 10
+      const noise = (Math.random() - 0.5) * 12
       d[i] = Math.min(255, Math.max(0, d[i] + noise))
       d[i + 1] = Math.min(255, Math.max(0, d[i + 1] + noise))
       d[i + 2] = Math.min(255, Math.max(0, d[i + 2] + noise))
@@ -267,6 +267,7 @@ function createStripTexture(flavor: FlavorData): THREE.CanvasTexture {
   const tex = new THREE.CanvasTexture(c)
   tex.colorSpace = THREE.SRGBColorSpace
   tex.anisotropy = 16
+  tex.needsUpdate = true
   return tex
 }
 
@@ -876,16 +877,6 @@ export const ThreeWebGPUScene: React.FC<ThreeWebGPUSceneProps> = ({
     <div className="relative w-full h-full min-h-[580px] flex items-center justify-center pointer-events-auto select-none">
       {/* Three.js Canvas Container */}
       <div ref={containerRef} className="absolute inset-0 w-full h-full cursor-grab active:cursor-grabbing" />
-
-      {/* Tech Spec Tag */}
-      <div className="absolute top-4 right-4 z-20 flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/40 backdrop-blur-md border border-white/20 text-[10px] font-mono text-white/90 shadow-xl">
-        <span className="w-2 h-2 rounded-full bg-[#34C771] animate-ping" />
-        <span className="font-bold">{rendererType}</span>
-        <span className="text-white/40">|</span>
-        <span className="text-white/70">{fps} FPS</span>
-        <span className="text-white/40">|</span>
-        <span className="text-white/70">PBR 3D Stage</span>
-      </div>
 
       {/* Interactive Micro Hint */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-black/40 hover:bg-black/60 backdrop-blur-md border border-white/20 text-[11px] font-mono text-white/90 shadow-xl transition-all pointer-events-none">

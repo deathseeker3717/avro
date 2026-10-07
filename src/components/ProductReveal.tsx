@@ -13,7 +13,7 @@ export const ProductReveal: React.FC = () => {
         'A lightweight food-grade film matrix designed to melt smoothly on the tongue with zero chewing, chalkiness, or residual stickiness.',
       icon: Zap,
       tag: 'TEXTURE & SPEED',
-      image: '/assets/avro-strip-float.jpg',
+      image: '/assets/AVRO Caffeine Strip in Cinematic Teal.png',
     },
     {
       id: 'waterfree',
@@ -23,7 +23,7 @@ export const ProductReveal: React.FC = () => {
         'Engineered for moments when you are deep in flow, commuting, in an exam hall, or in a silent library where carrying or drinking liquids is inconvenient.',
       icon: Droplets,
       tag: 'FRICTIONLESS CONVENIENCE',
-      image: '/assets/avro-strip-macro.jpg',
+      image: '/assets/AVRO Caffeine Strip Close-Up.png',
     },
     {
       id: 'pouch',
@@ -33,7 +33,7 @@ export const ProductReveal: React.FC = () => {
         'A compact, crush-resistant pocket flip-top box protecting individual freshness foil sachets that slide effortlessly into cardholders or laptop sleeves.',
       icon: Layers,
       tag: 'EVERYDAY CARRY',
-      image: '/assets/avro-cpack-generated.jpg',
+      image: '/assets/Premium AVRO Berry Caffeine Strips.png',
     },
   ]
 
